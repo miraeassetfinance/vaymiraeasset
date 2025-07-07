@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mirae Asset - Vay Tiêu Dùng</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+    header { background: #003366; color: #fff; padding: 20px; text-align: center; }
+    nav a { color: #fff; margin: 0 15px; text-decoration: none; }
+    section { padding: 20px; background: #fff; margin: 20px auto; max-width: 800px; border-radius: 8px; }
+    h2 { color: #003366; }
+    form input, form textarea { width: 100%; padding: 10px; margin: 10px 0; border-radius: 4px; border: 1px solid #ccc; }
+    form button { background: #003366; color: #fff; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; }
+    footer { text-align: center; padding: 20px; background: #003366; color: #fff; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MIRAE ASSET - Vay Tiêu Dùng</h1>
+    <nav>
+      <a href="#products">Sản Phẩm</a>
+      <a href="#register">Đăng Ký Vay</a>
+      <a href="#contact">Liên Hệ</a>
+    </nav>
+  </header>
+
+  <section id="products">
+    <h2>Giới Thiệu Sản Phẩm Vay</h2>
+    <p>Chúng tôi cung cấp các gói vay tiêu dùng linh hoạt, lãi suất cạnh tranh, thủ tục nhanh chóng. 
+      Hạn mức vay lên đến 100 triệu đồng, thời gian vay từ 6 - 36 tháng, giải ngân nhanh chóng.</p>
+    <ul>
+      <li>✔️ Vay tín chấp theo lương</li>
+      <li>✔️ Vay theo hợp đồng bên khác đóng qua 7 kỳ</li>
+      <li>✔️ Vay theo sao kê thẻ tín dụngc</li>
+    </ul>
+  </section>
+
+  <section id="register">
+    <h2>Đăng Ký Vay Tiêu Dùng</h2>
+    <form id="loanForm">
+      <input type="text" id="name" placeholder="Họ và tên" required />
+      <input type="tel" id="phone" placeholder="Số điện thoại" required />
+      <input type="number" id="amount" placeholder="Số tiền muốn vay (VNĐ)" required />
+      <textarea id="note" placeholder="Ghi chú thêm (nếu có)"></textarea>
+      <button type="submit">Gửi Đăng Ký</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Liên Hệ</h2>
+    <p>📞 Hotline: 0964 307 247</p>
+    <p>📧 Email: thien.mafc@outlook.com</p>
+    <p>🏢 Hổ trợ toàn quốc- Không hổ trợ nợ xấu</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Mirae Asset. All Rights Reserved.
+  </footer>
+
+  <script>
+    const form = document.getElementById('loanForm');
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Đăng ký vay thành công! Chúng tôi sẽ liên hệ bạn sớm.');
+      form.reset();
+    });
+  </script>
+</body>
+</html>
